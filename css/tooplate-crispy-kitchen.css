@@ -300,7 +300,7 @@ strong {
   padding-bottom: 6rem;
 }
 
-.site-about-header {
+/* .site-about-header {
   background-image: url('../images/header/briana-tozour-V_Nkf1E-vYA-unsplash.jpg');
 }
 
@@ -314,7 +314,7 @@ strong {
 
 .site-contact-header {
   background-image: url('../images/header/rod-long-I79Pgmhmy5M-unsplash.jpg');
-}
+} */
 
 .overlay {
   background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5) 50%, rgba(0,0,0,1) 100%);
@@ -346,7 +346,7 @@ strong {
 }
 
 .video-wrap {
-  background-image: url(https://blog.spoongraphics.co.uk/wp-content/uploads/2019/03/final-lg.jpg);
+  background-image: url(../images/background_car_0.jpg);
   background-size: cover;
   z-index: -100;
   position: absolute;
@@ -500,16 +500,18 @@ strong {
 }
 
 .menu-image {
-  display: block;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 .menu-image-wrap {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   overflow: hidden;
-  object-fit: cover;
   width: 100%;
-  height: 0;
-  padding-bottom: 100%;
 }
 
 .menu-tag {
@@ -662,7 +664,7 @@ strong {
 /*---------------------------------------
   BOOKING FORM            
 -----------------------------------------*/
-#BookingModal .modal-content {
+/* #BookingModal .modal-content {
   border: 0;
   overflow: hidden;
 }
@@ -716,22 +718,44 @@ strong {
 
 .booking-form button[type="submit"]:hover {
   background: var(--primary-color);
-}
+} */
 
 .BgImage {
-  background-image: url('../images/alex-haney-CAhjZmVk5H4-unsplash.jpg');
+  background-image: url('../images/background_car_2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   height: 500px;
 }
 
+.button-layer{
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button{
+  background: var(--white-color);
+  border-radius: 100px;
+  color: var(--secondary-color);
+  font-size: var(--menu-font-size);
+  font-weight: var(--font-weight-semibold);
+  display: inline-block;
+  min-width: 10%;
+  max-width: 20%;
+  height: 64px;
+  line-height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*---------------------------------------
   FOOTER              
 -----------------------------------------*/
 .site-footer {
-  background-image: url('../images/daan-evers-tKN1WXrzQ3s-unsplash.jpg');
+  background-image: url('../images/background_car_1.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -873,7 +897,7 @@ strong {
     padding-bottom: 10px;
   }
 
-  #BookingModal .modal-content {
+  /* #BookingModal .modal-content {
     padding-bottom: 200px;
   }
 
@@ -891,7 +915,7 @@ strong {
   #BookingModal .modal-body {
     padding-top: 18px;
     padding-right: 32px;
-  }
+  } */
 }
 
 @media screen and (max-width: 480px) {
